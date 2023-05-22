@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap');
+*{
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%!important;
+  list-style-type: none;
+}
+p{
+  color: #fff;
+}
+
+header {
+  background-color: #181d29;
+  width: 100%;
+  height:100vh;
+}
+.container{
+  margin-top: 25px!important;
+}
+.nav-item{
+  padding: 0%!important;
+  margin: 0%!important;
+}
+.nav-item a{
+  color: #fff!important;
+  text-align: center;
+  display: inline-block!important;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 0px 10px!important ;
+  position: relative;
+  margin: 0 10px!important;
+}
+.nav-item a::after{
+  content: '';
+  height: 3px!important;
+  width: 0!important;
+  background: #5fc57e!important;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+.nav-item a:hover::after{
+  width: 100%!important;
+}
+.navbar-brand{
+  color: #fff;
+  text-transform: uppercase;
+}
+.scnd-name{
+  color: #6cd98d!important;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 600;
+}
+.navbar-brand:hover{
+  color: #fff;
+}
+.nav-item a:hover{
+  color: #6cd98d!important;
+}
+.header-section{
+  color: white;
+  position: relative;
+}
+.intro-div{
+  margin: 50px 20px 20px 20px;
+  position: absolute;
+  left: 80px;
+  top: 120px;
+}
+.intro-div h2{
+  font-size: 25px;
+}
+h2 span{
+  color: #6cd98d;
+}
+.intro-div h1{
+  font-size: 35px;
+  text-transform: uppercase;
+  color: #6cd98d;
+  padding: 3px 3px!important;
+}
+.intro-div p{
+  font-size: 10px;
+  color: #b8b8b8;
+}
+.header-buttons {
+  display: flex;
+  justify-content: flex-start;
+}
+.header-buttons a{
+  padding: 10px!important;
+}
+.img-sec{
+  display:flex ;
+  justify-content: center;
+
+}
+.container2{
+  height: 500px;
+  /* overflow: hidden; */
+  clip-path: polygon(100% 20%, 100% 77%, 50% 100%, 0% 75%, 0% 0%);
+}
+
+.container2 img{
+  height: 700px;
+  background-color: #6cd98d;
+}
+
+
+
+
+/* ------------------media query------------------- */
+
+@media(max-width: 990px){
+
+  .nav-item {
+      display:block;
+      text-align: center!important;
+      padding: 10px!important;
+  }
+  header {
+    height: fit-content;
+  }
+  .intro-div{
+    text-align: center;
+    position: static;
+    
+  }
+  .header-buttons{
+    justify-content: center;
+  }
+  
+}
+
+@media(max-width: 768px){
+
+  .nav-item {
+      display:block;
+      text-align: center!important;
+      padding: 10px!important;
+  }
+ 
+  .header-buttons{
+    justify-content: center;
+  }
+  .intro-div{
+    text-align: center;
+    position: static; 
+  }
+}
+/* ============================================================================ */
+.grid1{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-color: #0c0e14;
+  padding-top: 100px!important;
+  padding-bottom: 100px!important;
+  height: 80vh!important;
+
+}
+.self h3{
+  font-size: 20px;
+  color: #fff;
+  margin-left: 85px;
+}
+.self h3 span{
+  color: #6cd98d;
+}
+.self h2{
+  font-size: 35px;
+  color: #fff;
+  margin-left: 80px;
+}
+.self p{
+  padding: 20px!important;
+  font-size: 15px;
+  margin: 0 60px;
+  color: #b8b8b8;
+}
+.myedu h2{
+  color: #fff;
+  font-size: 25px;
+  margin-left: 80px;
+}
+.myedu p{
+  padding: 20px!important;
+  font-size: 15px;
+  color: #b8b8b8;
+  margin:0 60px;
+}
+
+/* ------------------------------------------------------------------------- */
+.skills{
+   background-color: #181d29;
+   display: grid;
+   grid-template-columns: 60% 15% 25%;
+   padding: 100px 0px!important;
+   height: 80vh!important;
+}
+.myskl h3{
+  font-size: 20px;
+  color: #fff;
+  margin-left: 85px;
+  
+}
+.myskl h3 span{
+  color: #6cd98d;
+}
+.myskl h2{
+  font-size: 35px;
+  color: #fff;
+  margin-left: 80px;
+}
+.myskl p{
+  padding: 20px 250px 20px 20px !important;
+
+  font-size: 15px;
+  margin: 0 60px;
+  color: #b8b8b8;
+}
+ul li{
+  color: #fff;
+  padding: 10px!important;
+  font-size: 20px;
+}
+ul li span{
+  color: #6cd98d;
+}
+/* ---------------------------------------------------------------------------- */
+.qw{
+  background-color: #0c0e14;
+  padding: 100px 0px!important;
+  
+}
+.qw h2{
+  text-transform: capitalize;
+  font-size: 35px;
+  color: #fff;
+  text-align: center;
+}
+.projects{
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  gap:15px;
+  justify-content: center;
+}
+.pj{
+  margin: 80px 30px;
+  height: 300px;
+  position: relative;
+  background-color: #5fc57e;
+}
+.port{
+  background-image: url(https://cdn.pixabay.com/photo/2017/03/28/12/11/chairs-2181960_1280.jpg) ;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+.e-com{
+  background-image: url(https://cdn.pixabay.com/photo/2015/01/08/18/11/laptops-593296_960_720.jpg) ;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+.responsive{
+  background-image: url(https://cdn.pixabay.com/photo/2015/07/02/09/52/meeting-room-828547_960_720.jpg) ;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+.port:hover{
+  background-image: linear-gradient(rgba(21, 255, 0, 0.5),rgba(43, 255, 0, 0.5)),url(https://cdn.pixabay.com/photo/2017/03/28/12/11/chairs-2181960_1280.jpg);
+  transform: translateY(-20px);
+  
+}
+.e-com:hover{
+  background-image: linear-gradient(rgba(21, 255, 0, 0.5),rgba(43, 255, 0, 0.5)),url(https://cdn.pixabay.com/photo/2015/01/08/18/11/laptops-593296_960_720.jpg);
+  transform: translateY(-20px);
+}
+.responsive:hover{
+  background-image: linear-gradient(rgba(21, 255, 0, 0.5),rgba(43, 255, 0, 0.5)),url(https://cdn.pixabay.com/photo/2015/07/02/09/52/meeting-room-828547_960_720.jpg);
+  transform: translateY(-20px);
+}
+
+.pj p{
+  color: #000000;
+  position: absolute;
+  text-align: center;
+  top: 48%;
+  left: 0%;
+  padding: 0 20px!important;
+  font-size: 30px;
+  font-weight: 700;
+}
+/* ---------------------------------------------------------------------- */
+
+@media(max-width: 768px){
+  .grid1{
+    grid-template-columns: auto;
+  }
+  .skills{
+    grid-template-columns: auto;
+  }
+  .projects{
+    grid-template-columns: auto;
+  }
+  ul li{
+    margin-left: 85px;
+
+  }
+  .pj{
+    margin: 0;
+  }
+}
